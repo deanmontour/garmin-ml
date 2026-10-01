@@ -1,0 +1,20 @@
+[project]
+name = "running-data-project"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "DeanMontour",email = "DeanMMontour@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pandas (>=3.0.6,<4.0.0)",
+    "fastapi (>=0.142.2,<0.143.0)"
+]
+
+[tool.poetry]
+packages = [{include = "running_data_project", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
